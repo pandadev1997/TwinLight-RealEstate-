@@ -9,6 +9,7 @@ public class DataProvider_insideClassTest {
 		System.out.println(phone+"-->"+price+"-->"+rating+" -->"+feedback+"-->"+battery);
 		
 	}
+	//welcome to project
 	@DataProvider
 	public Object[][] data(){
 		Object[][] p=new Object[4][5];
