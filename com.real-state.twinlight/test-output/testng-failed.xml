@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.realstate.twinlightAdmin.Verify_Admin_Edit_the_UserRegisterPropertyTEst">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="AdminEditTherProperty"/>
+          <include name="launchBrowser"/>
+          <include name="dbConn"/>
+          <include name="logintoAppAsAdmin"/>
+          <include name="closeDB"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.realstate.twinlightAdmin.Verify_Admin_Edit_the_UserRegisterPropertyTEst -->
+      <class name="com.realstate.twinlightAdmin.Register_apartment_then_register_complaintAndVerifyTest">
+        <methods>
+          <include name="RegAPtThenComplaint"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="dbConn"/>
+          <include name="logintoAppAsAdmin"/>
+          <include name="closeDB"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.realstate.twinlightAdmin.Register_apartment_then_register_complaintAndVerifyTest -->
+      <class name="com.realsttate.twinlightUser.Edit_File_complaintTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="EditThenFileComplaintTest"/>
+          <include name="dbConn"/>
+          <include name="logintoAppAsAdmin"/>
+          <include name="closeDB"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.realsttate.twinlightUser.Edit_File_complaintTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.realsttate.twinlightUser.RegisterASUser_Creat_Apartment_Check_InDetailsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="CheckInDetail"/>
+          <include name="launchBrowser"/>
+          <include name="dbConn"/>
+          <include name="closeDB"/>
+          <include name="logintoAppAsAdmin"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.realsttate.twinlightUser.RegisterASUser_Creat_Apartment_Check_InDetailsTest -->
+      <class name="com.realstate.twinlightSearch.Search_Register_propertyTest">
+        <methods>
+          <include name="searchTheRegisterProperty"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="dbConn"/>
+          <include name="closeDB"/>
+          <include name="logintoAppAsAdmin"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.realstate.twinlightSearch.Search_Register_propertyTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

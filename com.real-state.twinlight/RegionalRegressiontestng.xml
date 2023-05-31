@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.realstate.twinlightAdmin.Register_apartment_then_register_complaintAndVerifyTest">
+     <methods>
+     
+     <include name="login_user_admin">
+     </include>
+     </methods>
+     
+      </class>
+      <class name="com.realstate.twinlightAdmin.Admin_register_complaintTest">
+      
+      
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
